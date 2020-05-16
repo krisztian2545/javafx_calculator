@@ -90,7 +90,7 @@ public class CalculatorController {
     private String formatDouble(double d) {
         if(d == 0) // to not print -0
             d = Math.abs(d);
-        return d == (long) d ? String.format("%.0f", d) : String.format("%.1f", d);
+        return d == (long) d ? String.format("%.0f", d) : String.format("%s", d);
     }
 
 }
